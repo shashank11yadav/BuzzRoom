@@ -1,46 +1,66 @@
 # BuzzRoom
 
-BuzzRoom is a cutting-edge Android chatting application built using Java. It enables seamless text and image sharing with an intuitive user experience, enhanced security features, and real-time interactions.
+BuzzRoom is a modern Android chat application built with Java, offering seamless real-time messaging and image sharing capabilities. It leverages Firebase for authentication, database management, and cloud storage, ensuring a smooth and secure user experience.
 
 ## Features
 
-- **Real-time Chatting**: Instant messaging with seamless user experience.
-- **Image Sharing**: Send and receive images within chats.
-- **OTP-Based Verification**: Secure user authentication using Google Firebase.
-- **Group and Individual Chats**: Chat with friends one-on-one or in groups.
-- **Status Updates**: Share updates with your contacts.
-- **Message Reactions**: Express emotions with emoji reactions.
-- **Profile Customization**: Users can personalize their profiles with pictures and status messages.
+- **Real-time Messaging**: Chat one-on-one or in groups with instant message delivery.
+- **OTP-based Authentication**: Secure and reliable login system using Firebase Authentication.
+- **Profile Customization**: Users can set up profiles with display names and profile pictures.
+- **Image Sharing**: Send and receive images seamlessly within chats.
+- **User Presence & Status Updates**: Update and view user availability status.
+- **Group Chat Support**: Engage in conversations with multiple users in group chats.
+- **Message Reactions**: React to messages with emojis for better interaction.
+- **Firebase Integration**: Uses Firebase Firestore and Firebase Storage for efficient data handling.
 
-## Technologies Used
+## Tech Stack
 
-- **Java**: Core programming language for Android development.
-- **Android Studio**: IDE for development and testing.
-- **Google Firebase**: Provides user authentication and real-time database.
-- **SQLite**: Local storage for chat history.
+- **Programming Language**: Java
+- **Database**: Firebase Realtime Database
+- **Authentication**: Firebase Authentication (OTP-based verification)
+- **Storage**: Firebase Cloud Storage
+- **UI Framework**: Android XML Layouts
 
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/shashank11yadav/BuzzRoom.git
    ```
 2. Open the project in **Android Studio**.
-3. Sync Gradle and install dependencies.
-4. Set up Firebase authentication and database:
-   - Create a Firebase project.
-   - Enable Authentication (Email/Phone OTP).
-   - Set up Firestore for real-time messaging.
-5. Run the application on an emulator or physical device.
+3. Connect the project to Firebase:
+   - Go to Firebase Console (https://console.firebase.google.com/)
+   - Create a new project
+   - Enable Firebase Authentication (Phone Authentication)
+   - Set up Firebase Realtime Database and Firebase Storage
+   - Download and add the `google-services.json` file to your `app` directory.
+4. Build and run the project on an Android device or emulator.
+
+## Project Structure
+```
+BuzzRoom/
+├── app/
+│   ├── src/main/java/com/shashank/chattingapp/Activities/
+│   │   ├── PhoneNumberActivity.java (Handles OTP authentication)
+│   │   ├── SetupProfileActivity.java (Handles user profile setup)
+│   │   ├── MainActivity.java (Main chat interface)
+│   ├── src/main/res/layout/ (XML UI layouts)
+│   ├── src/main/res/drawable/ (Icons and images)
+├── firebase/
+│   ├── FirebaseAuth (Handles authentication)
+│   ├── FirebaseDatabase (Stores user and chat data)
+│   ├── FirebaseStorage (Handles media uploads)
+├── README.md (Project Documentation)
+```
 
 ## Usage
-
-- **Sign Up/Login**: Users can sign up using OTP verification.
-- **Start a Chat**: Search for a contact and start messaging.
-- **Create a Group**: Add multiple users and start a group conversation.
-- **Send Images**: Share images instantly with friends.
-- **Update Status**: Share your thoughts and updates with your contacts.
-- **React to Messages**: Use emoji reactions to express yourself.
+1. **Sign Up/Login**: Enter your phone number and verify with OTP.
+2. **Set Up Profile**: Enter your name and optionally upload a profile picture.
+3. **Start Chatting**: Search for users and start individual or group conversations.
+4. **Create a Group**: Add multiple users and start a group conversation.
+5. **Send Images**: Share images with your contacts.
+6. **Update Status**: Let others know your current status.
+7. **React to Messages**: Use emoji reactions to express yourself.
 
 ## Future Enhancements
 
