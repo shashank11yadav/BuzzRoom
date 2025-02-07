@@ -46,10 +46,6 @@ BuzzRoom/
 │   │   ├── MainActivity.java (Main chat interface)
 │   ├── src/main/res/layout/ (XML UI layouts)
 │   ├── src/main/res/drawable/ (Icons and images)
-├── firebase/
-│   ├── FirebaseAuth (Handles authentication)
-│   ├── FirebaseDatabase (Stores user and chat data)
-│   ├── FirebaseStorage (Handles media uploads)
 ├── README.md (Project Documentation)
 ```
 
